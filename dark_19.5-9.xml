@@ -1,0 +1,579 @@
+<theme> 
+
+       <aspectRatio name="19.5:9">
+
+        <view name="system">
+            
+             <image name="background">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <cropSize>1 1</cropSize>
+                <path>${rootpath}/_inc/systems/backgrounds/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/backgrounds/custom-collections.webp</default>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>5</zIndex>
+             </image>
+
+            <image name="mask">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/assets/mask.webp</path>
+                <color>111111</color>
+                <opacity>0.9</opacity>
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+             </image>
+
+            <image name="consoles">
+                <pos>0.15 0.45</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.3 0.3</maxSize>
+                <path>${rootpath}/_inc/systems/consoles/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/consoles/custom-collections.webp</default>
+                <brightness>0.5</brightness>
+                <opacity>0.5</opacity>
+                <saturation>0</saturation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>15</zIndex>
+             </image>
+
+            <image name="scanlines">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <cropSize>1 1</cropSize>
+                <path>${rootpath}/_inc/assets/scanlines.webp</path>
+                <opacity>0.5</opacity>  
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+            
+            <image name="system-logos">
+                <pos>0.025 0.180</pos>
+                <origin>0 0.5</origin>
+                <maxSize>0.35 0.175</maxSize>
+                <path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+                <default>${rootpath}/_inc/systems/logos/custom-collections.svg</default>
+                <color>EEEEEE</color>
+                <opacity>0.5</opacity>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>25</zIndex>
+             </image>
+
+            <image name="botom-gradient">
+                <pos>0.5 1</pos>
+                <origin>0.5 1</origin>
+                <size>1 0.7</size>
+                <path>${rootpath}/_inc/assets/dark/bottom_grad.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>30</zIndex>
+             </image> 
+
+             <carousel name="system-carousel">
+                <pos>0.5 0.94</pos>
+                <size>1 1</size>
+                <origin>0.5 1</origin>
+                <type>horizontal</type>
+                <staticImage>${rootpath}/_inc/systems/icons/${system.theme}.webp</staticImage>
+                <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>
+                <itemSize>0.138 0.236</itemSize>
+                <imageFit>cover</imageFit>
+                <imageCornerRadius>${iconShape}</imageCornerRadius>
+                <selectedItemMargins>0.063 0.063</selectedItemMargins>
+                <itemScale>1</itemScale>
+                <maxItemCount>7</maxItemCount>
+                <itemVerticalAlignment>bottom</itemVerticalAlignment> 
+                <imageInterpolation>linear</imageInterpolation>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>FFFFFF</textColor>
+                <fontSize>0.038</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>capitalize</letterCase>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <unfocusedItemDimming>1</unfocusedItemDimming>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>35</zIndex>
+             </carousel>
+
+            <image name="video-background">
+                <pos>0.5 0.968</pos>
+                <origin>0.5 1</origin>
+                <maxSize>0.41 0.41</maxSize>
+                <path>${rootpath}/_inc/assets/vidbg.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>40</zIndex>
+             </image> 
+
+            <video name="system-video">
+                <pos>0.5 0.765</pos>
+                <size>0.263 0.349</size>
+                <origin>0.5 0.5</origin>
+                <imageType>none</imageType>
+                <imageCropSize>0.263 0.349</imageCropSize> 
+                <defaultImage>${rootpath}/_inc/systems/icons/${system.theme}.webp</defaultImage>
+                <default>${rootpath}/_inc/systems/icons/_default.webp</default>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <delay>2</delay>
+                <zIndex>45</zIndex>
+            </video>
+            
+            <image name="video-overlay">
+                <pos>0.5 0.968</pos> 
+                <origin>0.5 1</origin>
+                <maxSize>0.41 0.41</maxSize>
+                <path>${rootpath}/_inc/assets/vidover.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>50</zIndex>
+             </image> 
+
+            <image name="top-panel">
+                <pos>0.5 0</pos>
+                <origin>0.5 0</origin>
+                <maxSize>0.25 0.15</maxSize>
+                <path>${rootpath}/_inc/assets/dark/top_label.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>55</zIndex>
+             </image> 
+
+              <image name="bottom-label">
+                <pos>0.5 0.945</pos>
+                <origin>0.5 1</origin>
+                <maxSize>0.2 0.2</maxSize>
+                <path>${rootpath}/_inc/assets/dark/bottom_label.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>55</zIndex>
+             </image> 
+            
+            <image name="bottom-panel">
+                <pos>0.5 1</pos>
+                <origin>0.5 1</origin>
+                <size>1 0.15</size>
+                <path>${rootpath}/_inc/assets/dark/bottom_panel.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>60</zIndex>
+             </image> 
+
+            <text name="select-text">
+                <pos>0.5 0.0064</pos>
+                <origin>0.5 0</origin>
+                <size>1 0</size>
+                <text>select system</text>
+                <fontSize>0.032</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1</lineSpacing>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>EEEEEE</color>
+                <zIndex>65</zIndex>
+            </text>
+
+            <text name="game-count">
+                <pos>0.5 0.941</pos>
+                <origin>0.5 1</origin>
+                <size>1 0</size>
+                <systemdata>gamecountGames</systemdata>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1</lineSpacing>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>EEEEEE</color>
+                <zIndex>65</zIndex>
+            </text>
+
+            <text name="system-name">
+                <pos>0.5 0.953</pos>
+                <origin>0.5 0</origin>
+                <size>1 0</size>
+			    <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>1</lineSpacing>
+                <systemdata>fullname</systemdata>
+                <fontSize>0.038</fontSize>
+                <letterCase>capitalize</letterCase>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <color>EEEEEE</color>
+                <zIndex>65</zIndex>
+            </text>
+    
+             <image name="icon-releasedate">
+                <pos>0.011 0.991</pos>
+                <origin>0 1</origin>
+                <maxSize>0.04 0.04</maxSize>
+                <path>${rootpath}/_inc/assets/icon-releasedate.webp</path>
+                <color>EEEEEE</color>
+                <interpolation>linear</interpolation>
+                <zIndex>65</zIndex>
+             </image> 
+
+              <text name="system-year">
+                <pos>0.043 0.987</pos>
+                <origin>0 1</origin>
+                <size>0.1 0</size>
+                <text>${systemReleaseYear}</text>
+                <defaultValue>?</defaultValue>
+			    <horizontalAlignment>left</horizontalAlignment>
+                <lineSpacing>1</lineSpacing>
+                <fontSize>0.032</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <color>EEEEEE</color>
+                <zIndex>65</zIndex>
+           </text>
+
+             <text name="system-hardware">
+                <pos>0.98 0.987</pos>
+                <origin>1 1</origin>
+                <size>0.2 0</size>
+                <text>${systemHardwareType}</text>
+                <defaultValue>?</defaultValue>
+			    <horizontalAlignment>right</horizontalAlignment>
+                <lineSpacing>1</lineSpacing>
+                <fontSize>0.032</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <color>EEEEEE</color>
+                <zIndex>65</zIndex>
+           </text>
+
+        </view>
+
+        <view name="gamelist">
+
+              <image name="background">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <cropSize>1 1</cropSize>
+                <imageType>fanart,screenshot</imageType>
+                <default>${rootpath}/_inc/systems/backgrounds/${system.theme}.webp</default>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>5</zIndex>
+              </image>
+
+            <image name="scanlines">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <cropSize>1 1</cropSize>
+                <path>${rootpath}/_inc/assets/scanlines.webp</path>
+                <opacity>0.5</opacity>  
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+             </image> 
+
+            <image name="system-logos">
+                <pos>0.025 0.025</pos>
+                <origin>0 0</origin>
+                <maxSize>0.25 0.135</maxSize>
+                <path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+                <default>${rootpath}/_inc/systems/logos/custom-collections.svg</default>
+                <color>EEEEEE</color>
+                <opacity>0.9</opacity>
+                <interpolation>linear</interpolation>
+                <zIndex>15</zIndex>
+             </image>
+
+            <image name="botom-gradient">
+                <pos>0.5 1</pos>
+                <origin>0.5 1</origin>
+                <size>1 0.7</size>
+                <path>${rootpath}/_inc/assets/dark/bottom_grad.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+
+            <rating name="rating-stars">
+                <pos>0.98 0.696</pos>
+                <origin>1 1</origin>
+                <size>0 0.04</size>
+                <filledPath>${rootpath}/_inc/assets/star-filled.svg</filledPath>
+                <unfilledPath>${rootpath}/_inc/assets/star-unfilled.svg</unfilledPath>
+                <color>EEEEEEF2</color>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+            </rating> 
+
+             <carousel name="game-carousel">
+                <pos>0.5 0.94</pos>
+                <size>1 1</size>
+                <origin>0.5 1</origin>
+                <type>horizontal</type>
+                <imageType>cover,screenshot</imageType>
+                <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>
+                <itemSize>0.138 0.236</itemSize>
+                <imageFit>cover</imageFit>
+                <imageCornerRadius>${iconShape}</imageCornerRadius>
+                <selectedItemMargins>0.063 0.063</selectedItemMargins>
+                <itemScale>1</itemScale>
+                <maxItemCount>7</maxItemCount>
+                <itemVerticalAlignment>bottom</itemVerticalAlignment> 
+                <imageInterpolation>linear</imageInterpolation>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>FFFFFF</textColor>
+                <fontSize>0.038</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>capitalize</letterCase>
+                <lineSpacing>1</lineSpacing>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <unfocusedItemDimming>1</unfocusedItemDimming>
+                <zIndex>25</zIndex>
+            </carousel>
+
+              <image name="video-background">
+                <pos>0.5 0.968</pos>
+                <origin>0.5 1</origin>
+                <maxSize>0.41 0.41</maxSize>
+                <path>${rootpath}/_inc/assets/vidbg.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>30</zIndex>
+             </image> 
+
+            <video name="game-video">
+                <pos>0.5 0.765</pos>
+                <size>0.263 0.349</size>
+                <origin>0.5 0.5</origin>
+                <imageType>cover,titlescreen,screenshot</imageType>
+                <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>   
+                <imageMaxSize>0.263 0.349</imageMaxSize> 
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <delay>2</delay>
+                <zIndex>35</zIndex>
+            </video>
+            
+             <image name="video-overlay">
+                <pos>0.5 0.968</pos> 
+                <origin>0.5 1</origin>
+                <maxSize>0.41 0.41</maxSize>
+                <path>${rootpath}/_inc/assets/vidover.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>40</zIndex>
+             </image> 
+
+             <image name="top-panel">
+                <pos>0.5 0</pos>
+                <origin>0.5 0</origin>
+                <maxSize>0.25 0.15</maxSize>
+                <path>${rootpath}/_inc/assets/dark/top_label.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>45</zIndex>
+             </image> 
+
+            <image name="bottom-label">
+                <pos>0.5 0.945</pos>
+                <origin>0.5 1</origin>
+                <maxSize>0.2 0.2</maxSize>
+                <path>${rootpath}/_inc/assets/dark/bottom_label.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>45</zIndex>
+             </image> 
+
+            <image name="bottom-panel">
+                <pos>0.5 1</pos>
+                <origin>0.5 1</origin>
+                <size>1 0.15</size>
+                <path>${rootpath}/_inc/assets/dark/bottom_panel.webp</path>
+                <stationary>always</stationary>
+                <interpolation>linear</interpolation>
+                <zIndex>50</zIndex>
+             </image> 
+
+            <image name="game-logo">
+                <pos>0.5 0.597</pos>
+                <origin>0.5 1</origin>
+                <imageType>marquee</imageType>
+                <maxSize>0.25 0.155</maxSize>
+                <path>${rootpath}/_inc/assets/popdeck.webp</path>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>55</zIndex>
+             </image> 
+
+             <text name="select-text">
+                <pos>0.5 0.0064</pos>
+                <origin>0.5 0</origin>
+                <size>1 0</size>
+                <text>select game</text>
+                <fontSize>0.032</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1</lineSpacing>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </text>
+
+             <gamelistinfo name="gamelist-info">
+                <pos>0.5 0.949</pos>
+                <origin>0.5 1</origin>
+                <size>w 0</size>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <horizontalAlignment>center</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </gamelistinfo>
+            
+            <text name="game-name">
+                <pos>0.5 0.99</pos>
+                <origin>0.5 1</origin>
+                <size>0.65 0</size>
+                <container>true</container>
+                <containerType>horizontal</containerType>
+			    <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>1</lineSpacing>
+                <metadata>name</metadata>
+                <fontSize>0.032</fontSize>
+                <letterCase>uppercase</letterCase>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </text>
+
+            <image name="icon-genre">
+                <pos>0.011 0.991</pos>
+                <origin>0 1</origin>
+                <maxSize>0.04 0.04</maxSize>
+                <path>${rootpath}/_inc/assets/icon-genre.webp</path>
+                <color>EEEEEE</color>
+                <interpolation>linear</interpolation>
+                <zIndex>60</zIndex>
+             </image> 
+
+            <text name="game-genre">
+                <pos>0.0445 0.992</pos>
+                <origin>0 01</origin>
+                <size>0.2 0</size>
+                <metadata>genre</metadata>
+                <container>true</container>
+                <defaultValue>Unknown</defaultValue>
+                <containerType>horizontal</containerType>
+                <horizontalAlignment>left</horizontalAlignment>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <letterCase>capitalize</letterCase>
+                <fontSize>0.028</fontSize>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </text>
+
+            <image name="icon-players">
+                <pos>0.843 0.991</pos>
+                <origin>0 1</origin>
+                <maxSize>0.04 0.04</maxSize>
+                <path>${rootpath}/_inc/assets/icon-players.webp</path>
+                <color>EEEEEE</color>
+                <interpolation>linear</interpolation>
+                <zIndex>60</zIndex>
+             </image> 
+
+            <text name="game-players">
+                <pos>0.874 0.992</pos>
+                <origin>0 1</origin>
+                <size>0.1 0</size>
+                <metadata>players</metadata>
+                <container>true</container>
+                <defaultValue>?</defaultValue>
+                <containerType>horizontal</containerType>
+                <horizontalAlignment>left</horizontalAlignment>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <fontSize>0.028</fontSize>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </text>
+
+            <image name="icon-releasedate">
+                <pos>0.92 0.991</pos>
+                <origin>0 1</origin>
+                <maxSize>0.04 0.04</maxSize>
+                <path>${rootpath}/_inc/assets/icon-releasedate.webp</path>
+                <color>EEEEEE</color>
+                <interpolation>linear</interpolation>
+                <zIndex>60</zIndex>
+             </image> 
+
+            <datetime name="game-releasedate">
+                <pos>0.952 0.992</pos>
+                <origin>0 1</origin>
+                <size>0.1 0</size>
+                <metadata>releasedate</metadata>
+                <format>%Y</format>
+                <defaultValue>?</defaultValue>
+                <horizontalAlignment>left</horizontalAlignment>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <fontSize>0.028</fontSize>
+                <color>EEEEEE</color>
+                <zIndex>60</zIndex>
+            </datetime>
+
+            <badges name="favorite-badge">
+                <pos>0.622 0.647</pos>
+                <origin>0.45 0.45</origin>
+                <size>0.2 0.2</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <slots>favorite</slots>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/assets/favorite.webp</customBadgeIcon>
+                <badgeIconColor>FFCC00</badgeIconColor> 
+                <interpolation>linear</interpolation>
+                <zIndex>65</zIndex>
+            </badges>
+
+        </view>
+
+       <view name="system, gamelist">
+
+            <helpsystem name="help">
+                <pos>0.5 0.98</pos>
+                <origin>0.5 1</origin>
+                <textColor>EEEEEE</textColor>
+                <iconColor>EEEEEE</iconColor>
+                <fontSize>0.038</fontSize>
+                <letterCase>capitalize</letterCase>
+                <fontPath>${rootpath}/_inc/fonts/GeforceBold.ttf</fontPath>
+                <iconTextSpacing>0.003</iconTextSpacing>
+                <backgroundColor>000000FF</backgroundColor> 
+                <backgroundHorizontalPadding>0.005 0.005</backgroundHorizontalPadding>
+                <backgroundVerticalPadding>0.005 0.005</backgroundVerticalPadding>
+                <backgroundCornerRadius>0.005</backgroundCornerRadius>
+                <scope>menu</scope>
+            </helpsystem>
+
+            <systemstatus name="system-status">
+                <origin>1 0</origin>
+                <pos>0.985 0.015</pos>
+                <textRelativeScale>0.9</textRelativeScale>
+                <entrySpacing>0</entrySpacing>
+                <fontPath>${rootpath}/_inc/fonts/GeforceLight.ttf</fontPath>
+                <backgroundColor>000000CC</backgroundColor> 
+                <backgroundHorizontalPadding>0.01 0.01</backgroundHorizontalPadding>
+                <backgroundVerticalPadding>0.005 0.005</backgroundVerticalPadding>
+                <backgroundCornerRadius>0.1</backgroundCornerRadius>
+                <color>EEEEEE</color>
+            </systemstatus>
+
+            <clock name="clock">
+                <origin>1 0</origin>
+                <pos>0.985 0.07</pos>
+                <fontPath>${rootpath}/_inc/fonts/GeforceLight.ttf</fontPath>
+                <fontSize>0.032</fontSize>
+                <backgroundColor>000000CC</backgroundColor> 
+                <backgroundHorizontalPadding>0.01 0.01</backgroundHorizontalPadding>
+                <backgroundVerticalPadding>0.005 0.005</backgroundVerticalPadding>
+                <backgroundCornerRadius>0.1</backgroundCornerRadius>
+                <color>EEEEEE</color>
+            </clock>
+        
+        </view>
+
+     </aspectRatio>
+
+</theme>
+

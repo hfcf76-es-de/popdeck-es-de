@@ -1,0 +1,52 @@
+<themeCapabilities>
+
+    <themeName>PopDeck</themeName>
+
+    <aspectRatio>19.5:9</aspectRatio>
+    <aspectRatio>16:9</aspectRatio>
+    <aspectRatio>16:10</aspectRatio>
+    <aspectRatio>4:3</aspectRatio>
+    
+    <transitions name="fadeAndSlide">
+        <label>Default</label>
+        <selectable>false</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>slide</systemToGamelist>
+        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToSystem>slide</gamelistToSystem>
+        <startupToSystem>fade</startupToSystem>
+        <startupToGamelist>fade</startupToGamelist>
+    </transitions>
+
+    <suppressTransitionProfiles>
+        <entry>builtin-instant</entry>
+        <entry>builtin-slide</entry>
+        <entry>builtin-fade</entry>
+    </suppressTransitionProfiles>
+
+    <variant name="dark">
+        <label>Dark</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="light">
+        <label>Light</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+   <colorScheme name="square">
+      <label>Square Icons</label>
+   </colorScheme>
+
+   <colorScheme name="rounded">
+      <label>Rounded Icons</label>
+   </colorScheme>
+
+    <colorScheme name="circle">
+      <label>Circle Icons</label>
+   </colorScheme>
+
+</themeCapabilities>
+

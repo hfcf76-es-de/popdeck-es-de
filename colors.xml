@@ -1,0 +1,22 @@
+<theme>
+
+    <colorScheme name="square">
+        <variables>
+            <iconShape>0</iconShape>
+        </variables>
+   </colorScheme>
+
+   <colorScheme name="rounded">
+        <variables>
+            <iconShape>0.008</iconShape>
+        </variables>
+   </colorScheme>
+
+    <colorScheme name="circle">
+        <variables>
+            <iconShape>0.5</iconShape>
+        </variables>
+   </colorScheme>
+
+</theme>
+

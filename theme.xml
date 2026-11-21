@@ -1,0 +1,36 @@
+<theme>
+
+    <variables>
+        <rootpath>./</rootpath>
+            <fallbackLogo>${rootpath}/_inc/images/_logo.png</fallbackLogo>
+        </variables>
+
+    <include>${rootpath}/navigationsounds.xml</include>
+
+    <include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+    <include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+ 
+    <include>${rootpath}/colors.xml</include>
+
+     <view name="system">
+           <gameselector name="video-selector">
+                <selection>random</selection>
+           </gameselector>
+     </view>
+
+    <variant name="dark">
+        <include>${rootpath}/dark_19.5-9.xml</include>
+        <include>${rootpath}/dark_16-9.xml</include>
+        <include>${rootpath}/dark_16-10.xml</include>
+        <include>${rootpath}/dark_4-3.xml</include>
+    </variant>
+
+    <variant name="light">
+        <include>${rootpath}/light_19.5-9.xml</include>
+        <include>${rootpath}/light_16-9.xml</include>
+        <include>${rootpath}/light_16-10.xml</include>
+        <include>${rootpath}/light_4-3.xml</include>
+    </variant>
+
+</theme>
+
