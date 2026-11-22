@@ -2,6 +2,7 @@
 
 The theme consists of a carousel of icons positioned above a bar (containing information about the system or the game), at the bottom of the screen, with a video preview window in the middle. Nothing is positioned in the middle of the screen, so that the background art really stands out.
 
+
 ## Configuration Options
 
 - `Theme Aspect Ratios`: 16:9, 16:10, 19.5:10 and 4:3
