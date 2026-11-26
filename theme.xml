@@ -2,8 +2,7 @@
 
     <variables>
         <rootpath>./</rootpath>
-            <fallbackLogo>${rootpath}/_inc/images/_logo.png</fallbackLogo>
-        </variables>
+    </variables>
 
     <include>${rootpath}/navigationsounds.xml</include>
 
