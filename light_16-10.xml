@@ -78,7 +78,7 @@
                 <origin>0.5 1</origin>
                 <type>horizontal</type>
                 <staticImage>${rootpath}/_inc/systems/icons/${system.theme}.webp</staticImage>
-                <defaultImage>${rootpath}/_inc/icons/_default.webp</defaultImage>
+                <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>
                 <itemSize>0.138 0.216</itemSize>
                 <imageFit>cover</imageFit>
                 <imageCornerRadius>${iconShape}</imageCornerRadius>
