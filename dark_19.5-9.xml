@@ -79,12 +79,12 @@
                 <type>horizontal</type>
                 <staticImage>${rootpath}/_inc/systems/icons/${system.theme}.webp</staticImage>
                 <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>
-                <itemSize>0.138 0.236</itemSize>
+                <itemSize>0.108 0.232</itemSize>
                 <imageFit>cover</imageFit>
                 <imageCornerRadius>${iconShape}</imageCornerRadius>
-                <selectedItemMargins>0.063 0.063</selectedItemMargins>
+                <selectedItemMargins>0.056 0.056</selectedItemMargins>
                 <itemScale>1</itemScale>
-                <maxItemCount>7</maxItemCount>
+                <maxItemCount>9</maxItemCount>
                 <itemVerticalAlignment>bottom</itemVerticalAlignment> 
                 <imageInterpolation>linear</imageInterpolation>
                 <fastScrolling>true</fastScrolling>
@@ -110,10 +110,10 @@
 
             <video name="system-video">
                 <pos>0.5 0.765</pos>
-                <size>0.263 0.349</size>
+                <size>0.216 0.349</size>
                 <origin>0.5 0.5</origin>
                 <imageType>none</imageType>
-                <imageCropSize>0.263 0.349</imageCropSize> 
+                <imageCropSize>0.216 0.349</imageCropSize> 
                 <defaultImage>${rootpath}/_inc/systems/icons/${system.theme}.webp</defaultImage>
                 <default>${rootpath}/_inc/systems/icons/_default.webp</default>
                 <scrollFadeIn>true</scrollFadeIn>
@@ -305,12 +305,12 @@
                 <type>horizontal</type>
                 <imageType>cover,screenshot</imageType>
                 <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>
-                <itemSize>0.138 0.236</itemSize>
+                <itemSize>0.108 0.232</itemSize>
                 <imageFit>cover</imageFit>
                 <imageCornerRadius>${iconShape}</imageCornerRadius>
-                <selectedItemMargins>0.063 0.063</selectedItemMargins>
+                <selectedItemMargins>0.056 0.056</selectedItemMargins>
                 <itemScale>1</itemScale>
-                <maxItemCount>7</maxItemCount>
+                <maxItemCount>9</maxItemCount>
                 <itemVerticalAlignment>bottom</itemVerticalAlignment> 
                 <imageInterpolation>linear</imageInterpolation>
                 <fastScrolling>true</fastScrolling>
@@ -336,11 +336,11 @@
 
             <video name="game-video">
                 <pos>0.5 0.765</pos>
-                <size>0.263 0.349</size>
+                <size>0.216 0.349</size>
                 <origin>0.5 0.5</origin>
                 <imageType>cover,titlescreen,screenshot</imageType>
                 <defaultImage>${rootpath}/_inc/systems/icons/_default.webp</defaultImage>   
-                <imageMaxSize>0.263 0.349</imageMaxSize> 
+                <imageMaxSize>0.216 0.349</imageMaxSize> 
                 <scrollFadeIn>true</scrollFadeIn>
                 <interpolation>linear</interpolation>
                 <delay>2</delay>
